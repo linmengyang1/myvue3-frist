@@ -3,10 +3,14 @@
 </script>
 
 <template>
-   <el-button type="primary">Primary</el-button> 
-
+   <RouterView />
+   <div class="test">
+      test scss
+   </div>
 </template>
 
-<style lang="less" scoped> 
- 
+<style  scoped lang="scss"> 
+ .test{
+   color:  $priceColor;
+ }
 </style>
