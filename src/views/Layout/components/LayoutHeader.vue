@@ -1,8 +1,9 @@
 <script setup>
-// import LayoutHeaderUl from './LayoutHeaderUl.vue'
-// import HeaderCart from './HeaderCart.vue'
-import{useCategoryStore} from '@/stores/category'
-const categoryStore=useCategoryStore()
+ //import LayoutHeaderUl from './LayoutHeaderUl.vue'
+ //import HeaderCart from './HeaderCart.vue'
+ import HeaderCart from './HeaderCart.vue';
+ import { useCategoryStore } from '@/stores/category'
+const categoryStore = useCategoryStore()
 </script>
 
 <template>
@@ -11,6 +12,7 @@ const categoryStore=useCategoryStore()
       <h1 class="logo">
         <RouterLink to="/">小兔鲜</RouterLink>
       </h1>
+      
     <ul class="app-header-nav">
       <li class="home">
          <RouterLink to="/">首页</RouterLink>
@@ -27,6 +29,7 @@ const categoryStore=useCategoryStore()
       </div>
       <!-- 头部购物车 -->
       
+      <HeaderCart></HeaderCart>
     </div>
 </header>
 </template>
